@@ -1,0 +1,72 @@
+I use modern DPLL Algorithm with "Trail". Basically, this algorithm check whether there are unit clauses that includes (A) and (not A) at the same time. If so, then return False. If there are not unit clauses like that, then randomly choose a symbol and assign [True, False] to it. In my algorithm, I choose the symbol that occurs most in cnf. When all symbols are assigned, the algorithm return True. Additionally, this algorithm does not check pure literals.
+
+References:
+https://baldur.iti.kit.edu/sat/files/2016/l04.pdf
+
+Result:
+Pass n=50 time left 0:04:58.568
+Pass n=55 time left 0:04:57.011
+Pass n=60 time left 0:04:55.558
+Pass n=65 time left 0:04:53.921
+Pass n=70 time left 0:04:52.202
+Pass n=75 time left 0:04:50.305
+Pass n=80 time left 0:04:48.296
+Pass n=85 time left 0:04:46.196
+Pass n=90 time left 0:04:44.117
+Pass n=95 time left 0:04:41.931
+Pass n=100 time left 0:04:39.623
+Pass n=105 time left 0:04:37.286
+Pass n=110 time left 0:04:34.759
+Pass n=115 time left 0:04:32.032
+Pass n=120 time left 0:04:29.152
+Pass n=125 time left 0:04:26.143
+Pass n=130 time left 0:04:22.961
+Pass n=135 time left 0:04:19.796
+Pass n=140 time left 0:04:16.589
+Pass n=145 time left 0:04:13.287
+Pass n=150 time left 0:04:09.695
+Pass n=155 time left 0:04:06.020
+Pass n=160 time left 0:04:02.030
+Pass n=165 time left 0:03:58.230
+Pass n=170 time left 0:03:53.977
+Pass n=175 time left 0:03:49.783
+Pass n=180 time left 0:03:45.881
+Pass n=185 time left 0:03:41.890
+Pass n=190 time left 0:03:37.366
+Pass n=195 time left 0:03:33.041
+Pass n=200 time left 0:03:28.400
+Pass n=205 time left 0:03:23.787
+Pass n=210 time left 0:03:18.832
+Pass n=215 time left 0:03:14.121
+Pass n=220 time left 0:03:09.319
+Pass n=225 time left 0:03:04.393
+Pass n=230 time left 0:02:59.353
+Pass n=235 time left 0:02:54.149
+Pass n=240 time left 0:02:48.780
+Pass n=245 time left 0:02:43.605
+Pass n=250 time left 0:02:38.336
+Pass n=255 time left 0:02:32.857
+Pass n=260 time left 0:02:27.381
+Pass n=265 time left 0:02:21.775
+Pass n=270 time left 0:02:16.081
+Pass n=275 time left 0:02:10.305
+Pass n=280 time left 0:02:04.367
+Pass n=285 time left 0:01:58.392
+Pass n=290 time left 0:01:52.275
+Pass n=295 time left 0:01:45.986
+Pass n=300 time left 0:01:39.634
+Pass n=305 time left 0:01:33.234
+Pass n=310 time left 0:01:26.693
+Pass n=315 time left 0:01:20.050
+Pass n=320 time left 0:01:13.281
+Pass n=325 time left 0:01:06.428
+Pass n=330 time left 0:00:59.460
+Pass n=335 time left 0:00:52.323
+Pass n=340 time left 0:00:45.092
+Pass n=345 time left 0:00:37.771
+Pass n=350 time left 0:00:30.365
+Pass n=355 time left 0:00:22.796
+Pass n=360 time left 0:00:15.103
+Pass n=365 time left 0:00:07.319
+Time out!
+Largest n =  365
